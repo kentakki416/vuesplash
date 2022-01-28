@@ -38,9 +38,9 @@ class User extends Authenticatable
     ];
 
     /**
-    * リレーションシップ - photosテーブル
-    * @return \Illuminate\Database\Eloquent\Relations\HasMany
-    */
+     * リレーションシップ - photosテーブル
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function photos()
     {
         return $this->hasMany('App\Photo');
