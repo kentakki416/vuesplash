@@ -24,6 +24,8 @@ class Photo extends Model
     /** IDの桁数 */
     const ID_LENGTH = 12;
 
+    protected $perPage = 15; // この値を少なくすれば動作確認しやすいですね
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
